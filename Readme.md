@@ -6,8 +6,6 @@ Menghitung jumlah total item dan total harga dari setiap pesanan.
 
 
 ```sql
-sql
-Salin kode
 SELECT
     orders.id AS order_id,
     orders.customer_name,
@@ -31,8 +29,6 @@ Mencari pesanan dengan total harga tertinggi.
 
 
 ```sql
-sql
-Salin kode
 SELECT
     orders.id AS order_id,
     orders.customer_name,
@@ -59,8 +55,6 @@ Menampilkan produk yang paling banyak dipesan berdasarkan jumlah total quantity 
 ### Query
 
 ```sql
-sql
-Salin kode
 SELECT
     products.id AS product_id,
     products.name AS product_name,
@@ -84,8 +78,6 @@ Menampilkan stok awal dan stok yang tersisa setelah semua pesanan dilakukan.
 
 
 ```sql
-sql
-Salin kode
 SELECT
     products.id AS product_id,
     products.name AS product_name,
@@ -106,8 +98,6 @@ Menampilkan semua pesanan yang dibuat pada bulan tertentu (misalnya, November 20
 
 
 ```sql
-sql
-Salin kode
 SELECT
     orders.id AS order_id,
     orders.customer_name,
@@ -124,4 +114,3 @@ GROUP BY
     orders.id, orders.customer_name, orders.order_date;
 
 ```
-
